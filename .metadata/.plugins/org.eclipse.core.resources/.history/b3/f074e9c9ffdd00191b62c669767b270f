@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.eclipse.tdt4250.assignment1/src" modelPluginID="com.eclipse.tdt4250.assignment1"
+    modelName="Tdt4250" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="10.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>tdt4250.ecore</foreignModel>
+  <genPackages prefix="Tdt4250" disposableProviderFactory="true" ecorePackage="tdt4250.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="tdt4250.ecore#//StudyProgramName">
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.ecore#//StudyProgramName/computer_science_5_years"/>
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.ecore#//StudyProgramName/computer_science_2_years"/>
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.ecore#//StudyProgramName/informatics"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="tdt4250.ecore#//Semester">
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.ecore#//Semester/spring"/>
+      <genEnumLiterals ecoreEnumLiteral="tdt4250.ecore#//Semester/autumn"/>
+    </genEnums>
+    <genClasses ecoreClass="tdt4250.ecore#//StudyProgram">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.ecore#//StudyProgram/students"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.ecore#//StudyProgram/specialisations"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.ecore#//StudyProgram/obligatory_courses"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.ecore#//StudyProgram/number_of_semesters"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.ecore#//StudyProgram/name"/>
+    </genClasses>
+    <genClasses ecoreClass="tdt4250.ecore#//Course">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.ecore#//Course/code"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.ecore#//Course/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.ecore#//Course/study_points"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.ecore#//Course/level"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.ecore#//Course/semester"/>
+    </genClasses>
+    <genClasses ecoreClass="tdt4250.ecore#//Student">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.ecore#//Student/studentID"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.ecore#//Student/courses"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.ecore#//Student/current_semester"/>
+    </genClasses>
+    <genClasses ecoreClass="tdt4250.ecore#//Course%20group">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.ecore#//Course%20group/mandatory_courses"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.ecore#//Course%20group/elective_courses"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.ecore#//Course%20group/specialisation"/>
+    </genClasses>
+    <genClasses ecoreClass="tdt4250.ecore#//Specialisation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tdt4250.ecore#//Specialisation/students"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tdt4250.ecore#//Specialisation/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.ecore#//Specialisation/further_specialisation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tdt4250.ecore#//Specialisation/course_group"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

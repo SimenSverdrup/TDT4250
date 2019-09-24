@@ -1,0 +1,13 @@
+package edu.ntnu.studyplans;
+
+import tdt4250.*;
+import tdt4250.impl.*;
+
+public class TestingEMF {
+	
+	public static void main(String[] args) {
+		StudyProgramImpl CS_5years = new StudyProgramImpl();
+		
+	}
+
+}

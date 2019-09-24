@@ -1,0 +1,22 @@
+package edu.ntnu.studyplan;
+
+import com.eclipse.tdt4250.assignment1.*;
+
+public class StudyPlanInstance {
+
+	public static void main(String[] args) {
+		StudyProgram CS_5years = new StudyProgram();
+		StudyProgram CS_2years = new StudyProgram();
+		StudyProgram Informatics = new StudyProgram();
+		
+		CS_5years.setName("Datateknologi 5-åring");
+		CS_2years.setName("Datateknologi 2-årig");
+		Informatics.setName("Informatikk");
+		
+		Course TDT4250 = new Course();
+		TDT4250.setCode("TDT4250");
+		
+		
+	}
+
+}

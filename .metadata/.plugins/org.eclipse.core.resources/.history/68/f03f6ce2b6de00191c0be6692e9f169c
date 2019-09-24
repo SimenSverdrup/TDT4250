@@ -1,0 +1,12 @@
+package edu.ntnu.studyplan;
+
+import com.eclipse.tdt4250.assignment1;
+import com.
+
+public class StudyPlanInstance {
+
+	public static void main(String[] args) {
+		StudyProgram CS_5years = 
+	}
+
+}

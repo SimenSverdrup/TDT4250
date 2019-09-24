@@ -1,0 +1,11 @@
+package edu.ntnu.studyplan;
+
+import 
+
+public class StudyPlanInstance {
+
+	public static void main(String[] args) {
+		StudyProgram CS_5years = 
+	}
+
+}
