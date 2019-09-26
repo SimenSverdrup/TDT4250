@@ -7,6 +7,8 @@ Assignment 1:
 "model" contains the ECore model and the generator model
 
 
+
+
 Assignment 2: 
 Used the OSGi package: https://osgi.org/specification/osgi.cmpn/7.0.0/util.measurement.html
 
