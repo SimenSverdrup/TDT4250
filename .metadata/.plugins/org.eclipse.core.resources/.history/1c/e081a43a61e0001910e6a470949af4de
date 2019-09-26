@@ -1,0 +1,17 @@
+package conversionservlet;
+
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceReference;
+import org.osgi.service.http.HttpService;
+import org.osgi.util.tracker.ServiceTracker;
+
+public class HttpServiceTracker extends ServiceTracker {
+	public HttpServiceTracker(BundleContext context) {
+		super(context, HttpService.class.getName(), null);
+	}
+	
+	public Object addingService(ServiceReference reference) {
+		
+	}
+	
+}
