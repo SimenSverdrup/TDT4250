@@ -163,7 +163,7 @@
         </source>
         <referredProperty xsi:type="ecore:EAttribute" href="http://com/eclipse/tdt4250/assignment1#//Semester/semester_number"/>
       </body>
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/h4>&#xA;&#x9;&lt;table>&#xA;&#x9;&#x9;&lt;tr>&lt;th>Code&lt;/th>&lt;th>Mame&lt;/th>&lt;th>ECTS&lt;/th>&lt;th>Type&lt;/th>&lt;/tr>&#xA;"/>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/h4>&#xA;&#x9;&lt;table>&#xA;&#x9;&#x9;&lt;tr>&lt;th>Code&lt;/th>&lt;th>Name&lt;/th>&lt;th>ECTS&lt;/th>&lt;th>Type&lt;/th>&lt;/tr>&#xA;"/>
       <body xsi:type="mtl:ForBlock">
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&lt;tr>&lt;td>"/>
         <body xsi:type="ocl.ecore:PropertyCallExp">

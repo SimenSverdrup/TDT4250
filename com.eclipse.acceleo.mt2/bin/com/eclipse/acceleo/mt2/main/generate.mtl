@@ -45,7 +45,7 @@
 <div class="semester">
 	<h4>[semester.type/] [semester.semester_number/]</h4>
 	<table>
-		<tr><th>Code</th><th>Mame</th><th>ECTS</th><th>Type</th></tr>
+		<tr><th>Code</th><th>Name</th><th>ECTS</th><th>Type</th></tr>
 		[for (course: Course | spec.course_group.mandatory_courses)]
 		<tr><td>[course.code/]</td><td>[course.name/]</td><td>[course.study_points/]</td><td>"Mandatory"</td></tr>
 		[/for]
