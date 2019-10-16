@@ -1,0 +1,57 @@
+[comment encoding = UTF-8 /]
+
+[module generate('com.eclipse.tdt4250.assignment1/model/tdt4250.ecore', 'http://www.eclipse.org/emf/2002/Ecore')/]
+
+[template public generate(university: University)]
+	
+	[comment @main /]
+	[file (university.study_programs.name + '.html', false, 'UTF-8')]
+<html>
+	<head>
+		<title>Studyprograms for [university.name/]</title>
+	</head>
+	<body>
+		<h1>Studyprograms for [university.name/]<h1>
+		[for (program: StudyProgram | university.study_programs)]
+			[generateStudyProgram(program)/]
+		[/for]
+	</body>
+</html>
+	[/file]
+	
+[/template]
+
+[template public generateStudyProgram(program: StudyProgram)]
+<div class="study_program">
+	<h2>[program.name/]</h2>
+	<hr/>
+	[for (specialisation: Specialisation | program.specialisations)]
+		[generateSpecialisation(specialisation)/]
+	[/for]
+</div>
+[/template]
+
+
+[template public generateSpecialisation(specialisation: Specialisation)]
+<div class="specialisation">
+	<h3>[specialisation.name/]</h3>
+	[for (semester: Semester | specialisation.study_program_semester)]
+		[generateSemester(semester, specialisation)/]
+	[/for]
+</div>
+[/template]
+
+[template public generateSemester(semester: Semester, spec: Specialisation)]
+<div class="semester">
+	<h4>[semester.type/] [semester.semester_number/]</h4>
+	<table>
+		<tr><th>Code</th><th>Mame</th><th>ECTS</th><th>Type</th></tr>
+		[for (course: Course | spec.course_group.mandatory_courses)]
+		<tr><td>[course.code/]</td><td>[course.name/]</td><td>[course.study_points/]</td><td>"Mandatory"</td></tr>
+		[/for]
+		[for (course: Course | spec.course_group.elective_courses)]
+		<tr><td>[course.code/]</td><td>[course.name/]</td><td>[course.study_points/]</td><td>"Elective"</td></tr>
+		[/for]
+	</table>
+</div>
+[/template]

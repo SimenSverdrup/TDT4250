@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="osgiProject" value="false"/>
-	<item key="generatePluginActivator" value="false"/>
+	<item key="osgiProject" value="true"/>
+	<item key="generatePluginActivator" value="true"/>
 	<item key="uiPlugin" value="false"/>
 	<item key="apiAnalysis" value="false"/>
 	<item key="rcpPlugin" value="false"/>
@@ -28,8 +28,8 @@
 		<section name="DialogBoundsSettings">
 			<item key="DIALOG_HEIGHT" value="500"/>
 			<item key="DIALOG_WIDTH" value="600"/>
-			<item key="DIALOG_X_ORIGIN" value="671"/>
-			<item key="DIALOG_Y_ORIGIN" value="188"/>
+			<item key="DIALOG_X_ORIGIN" value="473"/>
+			<item key="DIALOG_Y_ORIGIN" value="169"/>
 			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 		</section>
 	</section>

@@ -2,4 +2,7 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="tdt4250.impl.StudentImpl"/>
 <fullyQualifiedTypeName name="tdt4250.impl.StudyProgramImpl"/>
+<fullyQualifiedTypeName name="org.osgi.util.tracker.ServiceTracker"/>
+<fullyQualifiedTypeName name="javax.servlet.HttpConstraintElement"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
 </qualifiedTypeNameHistroy>

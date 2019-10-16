@@ -4,8 +4,16 @@
 		<item value="C:\Users\simen\Downloads\aeislab-mylist-0aefbe04dc8c"/>
 	</list>
 	<section name="NewWizardAction">
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="bndtools.workspaceWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="bndtools.wizardCategory"/>
 		</list>
+	</section>
+	<section name="CleanDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="546"/>
+		<item key="DIALOG_Y_ORIGIN" value="190"/>
+		<item key="DIALOG_WIDTH" value="828"/>
+		<item key="DIALOG_HEIGHT" value="480"/>
+		<item key="TOGGLE_SELECTED" value="true"/>
 	</section>
 </section>
