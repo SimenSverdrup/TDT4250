@@ -13,3 +13,10 @@ Assignment 2:
 Used the OSGi package: https://osgi.org/specification/osgi.cmpn/7.0.0/util.measurement.html
 
 Enter the URL http://localhost:8080/ConversionServlet in the browser to access the servlet
+
+
+
+Assignment 3:
+Used Acceleo to generate HTML-code from my ecore-model.
+
+Hard to check the correctness of my solution, as I'm still unable to instanciate the generated classes from assignment 1. This problem persists even though I set the build path for the instanciation-component.
